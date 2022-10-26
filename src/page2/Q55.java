@@ -14,17 +14,6 @@ public class Q55 {
     static int[][] table;
     static int[] dx = {1, 0, -1, 0};
     static int[] dy = {0, 1, 0, -1};
-    static int[][] dp;
-    static boolean[][] visited;
-    static int flag = 0;
-    static class Node {
-        int x, y, time;
-        public Node(int x, int y, int time) {
-            this.x = x;
-            this.y = y;
-            this.time = time;
-        }
-    }
 
     public static void main(String[] args) throws IOException {
 
@@ -36,12 +25,9 @@ public class Q55 {
         T = Integer.parseInt(st.nextToken());
 
         table = new int[N][M];
-        dp = new int[N][M];
-        visited = new boolean[N][M];
 
         int s1 = 0;
         int s2 = 0;
-        for (int i=0; i < N; i++) Arrays.fill(dp[i], Integer.MAX_VALUE );
 
         for (int i=0; i < N; i++) {
 
@@ -56,57 +42,46 @@ public class Q55 {
 
         }
 
-        calculate(0, 0, 0, 0);
-        if (flag == 1) {
-            calculate(s1, s2, dp[s1][s2], flag);
-        }
+        int min = calculate(0, 0, N-1, M-1, 0);
+        min = Math.min(min, calculate(0, 0, s1, s2, 0) + calculate(s1, s2, N-1, M-1, 1));
 
-        System.out.println(dp[N-1][M-1] > T ? "Fail" : dp[N-1][M-1]);
+        System.out.println(min > T ? "Fail" : min);
     }
 
-    public static void calculate(int start, int end, int time ,int type) {
+    public static int calculate(int sx, int sy, int tx, int ty, int type) {
 
-        Queue<Node> queue = new LinkedList<>();
-        queue.add(new Node(start, end, time));
-        boolean on = false;
+        Queue<int[]> queue = new LinkedList<>();
+        queue.add(new int[]{sx, sy, 0});
+        boolean[][] visited = new boolean[N][M];
+        int min = T+1;
 
         while (!queue.isEmpty()) {
 
-            Node info = queue.poll();
-            int x = info.x;
-            int y = info.y;
-            int t = info.time;
+            int[] data = queue.poll();
+            int x = data[0];
+            int y = data[1];
+            int t = data[2];
 
-            if (T < t) continue;;
+            if (!check(x,y, visited) || (type == 0 && table[x][y] == 1)) continue;
+            else if(x == tx && y == ty) {
+                min = Math.min(min, t);
+                continue;
+            }
 
             visited[x][y] = true;
-            dp[x][y] = Math.min(dp[x][y], t);
-
-            if (table[x][y] == 2) on = true;
 
             for (int k=0; k < 4; k++) {
                 int x1 = x + dx[k];
                 int y1 = y + dy[k];
-
-                if (check(x1, y1) && (!visited[x1][y1] || dp[x1][y1] >= t+1)) {
-                    if (type == 1) {
-                        queue.add(new Node(x1, y1, t+1));
-                    } else {
-                        if(table[x1][y1] == 0 || table[x1][y1] == 2) {
-                            queue.add(new Node(x1, y1, t+1));
-                        }
-                    }
-                }
+                queue.add(new int[]{x1, y1, t + 1});
             }
-
         }
 
-        if (on) flag = 1;
-
+        return min;
     }
 
-    public static boolean check(int x, int y) {
-        if(x < 0 || y < 0 || x > N-1 || y > M-1) return false;
+    public static boolean check(int x, int y, boolean[][] visited) {
+        if(x < 0 || y < 0 || x > N-1 || y > M-1 || visited[x][y] ) return false;
         return true;
     }
 }
