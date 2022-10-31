@@ -35,11 +35,10 @@ public class Q68 {
         }
 
         int[] dp = new int[N];
-        Arrays.fill(dp, 1);
 
         for (int i=0; i < N; i++) {
 
-
+            dp[i] = 1;
             for (int j=0; j < i; j++) {
 
                 if (table[j] < table[i]) {
@@ -49,8 +48,6 @@ public class Q68 {
             }
 
         }
-
-        System.out.println(Arrays.toString(dp));
 
         int max = Arrays.stream(dp).max().getAsInt();
 
