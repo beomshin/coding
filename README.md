@@ -14,3 +14,6 @@
 
 # Graph Traversal (그래프 탐색)
 - 숫자고르기(clear / Q70)
+
+# Brute Force (완전탐색)
+- 카드 섞기 (clear / Q71)
