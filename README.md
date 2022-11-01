@@ -17,3 +17,6 @@
 
 # Brute Force (완전탐색)
 - 카드 섞기 (clear / Q71)
+
+# Simulation (시뮬레이션)
+- 인구이동 (clear / Q72)
