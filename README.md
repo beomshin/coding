@@ -21,5 +21,8 @@
 # Simulation (시뮬레이션)
 - 인구이동 (clear / Q72)
 
-# 
+# 이분탐색
 - 색종이와 가위 (clear / Q73)
+
+# Backtracking (백트래킹)
+- 무기 공학 (clear / Q74)
