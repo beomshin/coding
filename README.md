@@ -20,3 +20,6 @@
 
 # Simulation (시뮬레이션)
 - 인구이동 (clear / Q72)
+
+# 
+- 색종이와 가위 (clear / Q73)
