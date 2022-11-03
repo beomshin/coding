@@ -1,5 +1,4 @@
 
-
 # Greedy (그리디)
 - 파일 합치기 3 (clear/Q66) 
 
@@ -29,3 +28,6 @@
 
 # Divide and conquer (분할정복)
 - 별 찍기 - 11 (clear / Q75)
+
+# Prefix Sum (누적 합)
+- 수들의 합 4 (clear / Q76)

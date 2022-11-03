@@ -10,6 +10,16 @@ import java.util.StringTokenizer;
 
 public class Q76 {
 
+    /**
+     * 수들의 합 4
+     * https://www.acmicpc.net/problem/2015
+     *
+     * 누적값들을 맵에 담아두고 해당 누적합과 합쳐 k개를 만들수 있는 누적합의 개수를 계산하여
+     * 총 COUNT를 증가시킨다.
+     *
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
