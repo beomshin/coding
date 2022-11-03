@@ -31,3 +31,6 @@
 
 # Prefix Sum (누적 합)
 - 수들의 합 4 (clear / Q76)
+
+# String (문자열)
+- 회문 (clear / Q77)
