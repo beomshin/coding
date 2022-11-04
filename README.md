@@ -37,3 +37,6 @@
 
 # Shortest Path (최단거리)
 - 끝나지 않는 파티 (celar / Q78)
+
+# Disjoint Set (분리집합)
+- 집합의 표현 (clear / Q79)
