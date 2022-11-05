@@ -40,3 +40,6 @@
 
 # Disjoint Set (분리집합)
 - 집합의 표현 (clear / Q79)
+
+# Minimum Spanning Tree (최소 스패닝 트리)
+- 최소 스패닝 트리	 (clear / Q80)
