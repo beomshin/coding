@@ -43,3 +43,6 @@
 
 # Minimum Spanning Tree (최소 스패닝 트리)
 - 최소 스패닝 트리	 (clear / Q80)
+
+# Trie (트라이)
+- 전화번호 목록
