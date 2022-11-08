@@ -45,4 +45,7 @@
 - 최소 스패닝 트리	 (clear / Q80)
 
 # Trie (트라이)
-- 전화번호 목록
+- 전화번호 목록 (clear / Q81)
+
+# Data Structre2 (자료구조)
+- 문제 추천 시스템 Version 1 (clear / Q82)
