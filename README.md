@@ -49,3 +49,6 @@
 
 # Data Structre2 (자료구조)
 - 문제 추천 시스템 Version 1 (clear / Q82)
+
+# tree (트리)
+- 트리의 지름 (clear / Q83 )
