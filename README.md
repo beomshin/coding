@@ -8,6 +8,7 @@
 
 # Dynamic Programming 2 (동적계획법 2)
 - 줄세우기 (clear / Q68 / LIS)
+- 구간 나누기 (hard / Q85)
 
 # Two Pointers (투 포인터)
 - 가장 긴 짝수 연속한 부분 수열 (large) (clear / Q69)
