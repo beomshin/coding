@@ -12,6 +12,7 @@
 
 # Two Pointers (투 포인터)
 - 가장 긴 짝수 연속한 부분 수열 (large) (clear / Q69)
+- 회전 초밥 (clear / Q86)
 
 # Graph Traversal (그래프 탐색)
 - 숫자고르기(clear / Q70)
