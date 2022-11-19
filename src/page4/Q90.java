@@ -7,6 +7,16 @@ import java.util.*;
 
 public class Q90 {
 
+    /**
+     * 공유기 설치
+     * https://www.acmicpc.net/problem/2110
+     *
+     * 공유기 최대 설치 길이를 구하여 이분 탐색을 통하여
+     * 길이 별 설치 가능 공유기 대수를 구하여 최대 값을 구한다
+     *
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());

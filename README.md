@@ -31,6 +31,7 @@
 
 # Backtracking (백트래킹)
 - 무기 공학 (clear / Q74)
+- 선발 명단 (clear / Q91)
 
 # Divide and conquer (분할정복)
 - 별 찍기 - 11 (clear / Q75)
