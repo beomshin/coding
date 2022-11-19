@@ -27,6 +27,7 @@
 
 # 이분탐색
 - 색종이와 가위 (clear / Q73)
+- 공유기 설치 (clear / Q90)
 
 # Backtracking (백트래킹)
 - 무기 공학 (clear / Q74)
