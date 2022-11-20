@@ -38,6 +38,7 @@
 
 # Prefix Sum (누적 합)
 - 수들의 합 4 (clear / Q76)
+- 점수따먹기 (clear / Q92)
 
 # String (문자열)
 - 회문 (clear / Q77)
